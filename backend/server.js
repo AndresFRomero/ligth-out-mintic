@@ -103,6 +103,4 @@ userRoutes.route('/findUser/:username/:password').get( async (req, res) => {
     }
 })
 
-app.listen(PORT, function() {
-    console.log("Server is running on Port: " + PORT);
-});
+app.listen(process.env.PORT || 5000)
