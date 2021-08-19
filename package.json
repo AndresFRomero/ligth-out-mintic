@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": " concurrently  \"cd ./frontend && npm start\" \"cd ./backend && npm build\""
+        "start": " concurrently  \"cd ./frontend && npm install && npm start\" \"cd ./backend && npm start\""
     },
     "dependencies": {
         "concurrently": "^6.2.1"
