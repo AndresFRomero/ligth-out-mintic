@@ -4,7 +4,6 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const userRoutes = express.Router();
-const PORT = 8000;
 
 let User = require('./models/user')
 
