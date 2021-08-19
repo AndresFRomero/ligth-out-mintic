@@ -1,0 +1,47 @@
+.imagenSuperior {
+    display: block;
+    margin-top: 0.5vw;
+    margin-right: auto;
+    margin-left: auto;
+    width: 10%;
+    height: 10%;
+  }
+
+.encabezado {
+    text-align: center;
+    font-size: 3.0vw;
+}
+
+.textoMenor {
+    text-align: center;
+    font-size: 2.0vw;
+}
+
+.numeros {
+    text-align: center;
+    font-size: 5.0vw;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  text-align: center;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.stats-container{
+  display: flex;
+}
+
+.stats-column{
+  width: 50vw;
+}

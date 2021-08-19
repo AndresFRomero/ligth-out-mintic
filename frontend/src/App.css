@@ -1,0 +1,301 @@
+@import '~antd/dist/antd.css';
+
+body {
+  background-color: white !important;
+}
+
+/* TABLERO DE JUEGO */
+.game-row{
+  flex:auto;
+  display: flex;
+}
+
+.button-container{
+  flex:auto;
+  display: flex;
+  padding: 0.3vw;
+}
+
+.button-container-sol{
+  flex:auto;
+  display: flex;
+  padding: 0.3vw;
+  background-color: tomato;
+}
+
+.on-button{
+    background-color: #ffc107;
+    cursor: pointer;
+    border: transparent;
+    flex:auto;
+}
+
+.off-button{
+  background-color: black;
+  border: transparent;
+  cursor: pointer;
+  flex: auto;
+}
+
+
+/* FULL INTERFACE */
+.main-container{
+  width: 100vw;
+  height: 39vw;
+  display: flex;
+}
+
+/* LEFT BUTTONS */
+.left-container{
+  display: flex;
+  flex-direction: column;
+  width: 11vw;
+  justify-content: space-around;
+  background-color: #C4C4C4;
+}
+
+.left-button-element{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13vw;
+  width: 11vw;
+  flex-direction: column;
+  background-color: #C4C4C4;
+}
+
+.left-image{
+  height: 6vw;
+}
+
+.retroceso {
+  padding-top: 1vw;
+  padding-left: 1vw;
+  height: 6vw;
+}
+
+/* LIGHT OUT GAME */
+.game-container{
+  width: 89vw;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0vw;
+  padding-left: 28vw;
+  padding-right: 28vw;
+  padding-bottom: 1vw;
+}
+
+.bottom-container{
+  width: 100vw;
+  height: 13vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-button-element{
+  height: 13vw;
+  width: 17.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bottom-image{
+  height: 6vw;
+}
+/* BOTONES ARRIBA DEL JUEGO */
+
+.title-text{
+  width: 100%;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.buttons-text{
+  width: 100%;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-align: center;
+}
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+ 
+.box {
+  position: relative;
+  width: 20%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 80vh);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+/* Barra de Navegación */
+.nav-container{
+  height: 7vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #C4C4C4;
+  width: 100vw;
+}
+
+.nav-text {
+  padding: 15px 25px;
+  font-size: 1.8vw;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.nav-text:link{
+  text-decoration: none;
+}
+.nav-text:hover {background-color: #3e8e41}
+
+.nav-text:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* SUCCESS REGISTRATION MESSAGE */
+#card {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#upper-side {
+  padding: 2.2em;
+  background-color: #8BC34A;
+  display: block;
+  color: #fff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+#upper-side-fail {
+  padding: 2.2em;
+  background-color: #c34a4a;
+  display: block;
+  color: #fff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+#checkmark {
+  font-weight: lighter;
+  fill: rgb(65, 10, 10);
+  margin: -3.5em auto auto 20px;
+}
+
+#status {
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1em;
+  margin-top: -.2em;
+  margin-bottom: 0;
+}
+
+#lower-side {
+  padding: 5em 5em 5em 5em;
+  background: rgb(236, 236, 236);
+  display: block;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#message {
+  color: #464646;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+#contBtn {
+  position: relative;
+  top: 1.5em;
+  text-decoration: none;
+  background: #8bc34a;
+  color: #fff;
+  margin: auto;
+  padding: .8em 3em;
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  border-radius: 25px;
+  -webkit-transition: all .4s ease;
+		-moz-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+}
+
+#contBtn-fail {
+  position: relative;
+  top: 1.5em;
+  text-decoration: none;
+  background: #c34a4a;
+  color: #fff;
+  margin: auto;
+  padding: .8em 3em;
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  border-radius: 25px;
+  -webkit-transition: all .4s ease;
+		-moz-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+}
+
+#contBtn:hover {
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -webkit-transition: all .4s ease;
+		-moz-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+}
+
+#contBtn-fail:hover {
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -webkit-transition: all .4s ease;
+		-moz-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+}
+
+
+
+
