@@ -3,6 +3,8 @@
         "start": " concurrently \"cd ./frontend && npm start\" "
     },
     "dependencies": {
-        "concurrently": "^6.2.1"
+        "concurrently": "^6.2.1",
+        "express": "^4.17.1",
+        "react-scripts": "^4.0.3"
     }
 }
