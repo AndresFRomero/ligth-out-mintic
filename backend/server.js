@@ -10,6 +10,7 @@ let User = require('./models/user')
 app.use(cors());
 app.use(express.json());
 app.use('/users', userRoutes);
+app.listen(process.env.PORT || 5000)
 
 mongoose.connect('mongodb+srv://aromero:Cronometro11@clusterlightout.ficwy.mongodb.net/ClusterLightOut', 
                 { useNewUrlParser: true }).then(db => console.log("La conexion fue exitosa"))
@@ -103,4 +104,3 @@ userRoutes.route('/findUser/:username/:password').get( async (req, res) => {
     }
 })
 
-app.listen(process.env.PORT || 5000)
